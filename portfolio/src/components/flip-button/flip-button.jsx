@@ -15,15 +15,13 @@ const FlipButton = ({text,id}) => {
                     flipCardInner.style.transform = "rotateY(180deg)"
                     flipCardFront.style.zIndex = 1
                     flipCardBack.style.zIndex = 0
-                    console.log(id)
                 }
                 else{
                     flipCardInner.style.transform = "rotateY(0deg)"
                     flipCardFront.style.zIndex = 0
                     flipCardBack.style.zIndex = 1
-                    console.log('home')
                 }
-                setFlip((prev)=>{return {...prev,flipped:!prev.flipped}})
+                setFlip((prev)=>{return {...prev,page:id,flipped:!prev.flipped}})
                 console.log(flip)
             }}
             >

@@ -1,8 +1,12 @@
 import "./flip-card.css"
 import FlipSide from "./flip-side/flip-side"
 import FlipButton from "../flip-button/flip-button"
+import ProjectDetail from "../projectDetail/projectDetail"
+import { useContext } from 'react';
+import { FlipContext } from '../../context/context';
 
 const FlipCard = () => {
+    const { flip, setFlip } = useContext(FlipContext); 
     return (<>
         <div className="flip-card h-100 w-100">
             <div className="flip-card-inner h-100 w-100 bg-dark text-white">
@@ -33,14 +37,14 @@ const FlipCard = () => {
                                 <FlipButton text='My BCA Web Application' id='myBCA' />
                             </li>
                             <li>
-                                <FlipButton text='Sheepo E-Commerve' id='sheepo' />
+                                <FlipButton text='Sheepo E-Commerce' id='sheepo' />
                             </li>
                         </ul>
                     </div>
                 </FlipSide>
 
                 <FlipSide side='back'>
-                    <h1>im back</h1>
+                    <ProjectDetail title={flip.page}/>
                 </FlipSide>
             </div>
         </div>

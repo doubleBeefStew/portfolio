@@ -7,6 +7,7 @@ import FlipSide from './components/flip-card/flip-side/flip-side';
 function App() {
   const [flip, setFlip] = useState({
     flipped:false,
+    page:''
   });
 
   return (
