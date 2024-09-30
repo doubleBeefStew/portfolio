@@ -9553,6 +9553,12 @@ textarea.form-control {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
+.techstack-icon{
+  height: 4rem;
+  width: auto;
+  object-fit: contain;
+}
+
 .sidebar-box {
   margin-bottom: 30px;
   padding: 25px;
