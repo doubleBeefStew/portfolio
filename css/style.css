@@ -4446,6 +4446,13 @@ input[type="button"].btn-block {
       border-bottom-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
 
+  .glassy-navbar{
+    background: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
 @media (min-width: 576px) {
   .list-group-horizontal-sm {
     -webkit-box-orient: horizontal;
